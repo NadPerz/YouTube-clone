@@ -1,0 +1,125 @@
+
+.thumbnail{
+
+  width: 100%;
+  
+  
+  /* object-fit: cover; */
+          /* object-fit: contain; */
+  /* object-position: left; */   /* object-position: top; */         /* object-position: bottom; */
+  /* border-width: 2px; */
+  /* border-style: solid; */
+  /* border-color: red; */
+}
+
+.video-title{
+  
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* .video-stats, 
+.video-author{
+  display: inline-block;
+}   
+  no need inline block couse need as a block */
+
+  .vedeo-info-grid{
+
+        display: grid;
+        grid-template-columns: 50px 1fr;
+  }
+
+
+.profile-picture{
+
+  width: 36px;
+  border-radius: 50px;
+}
+
+.thumbnail-raw{
+
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,.video-stats{
+
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  line-height: 20px;
+
+  /* making common syntax or style to all name as a CSS Specificity */
+}
+
+.video-stats{
+
+  margin-bottom: 4px;
+
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+  text-decoration: underline;
+}
+
+
+/* 
+      CSS inheritence
+      ***************
+   text-decoration: underline;  (if we style outer element its appear allthe inside of eliment it self
+   font-family: Roboto,Arial;
+*/
+
+/* responsive design */
+@media(max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(min-width: 751px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+
+@media(min-width: 1000px){
+
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+.video-time{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px; 
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px; 
+  right: 5px;
+}
+
+
+
+/*
+    CSS Shot cut
+    ************
+
+      padding: 4px 10px 20px 30px; 
+      margin: 4px 10px 20px 30px;
+*/
